@@ -1,0 +1,15 @@
+.row
+  .col-md-8.col-md-offset-2.col-lg-8.col-lg-offset-2
+    %h1.text-center Top users
+    %table.table.table-striped
+      %thead
+        %tr
+          %th #
+          %th Name
+          %th Number of comments
+      %tbody
+        - @users_counted.each_with_index do |(user, counted_movies), i|
+          %tr
+            %td= i + 1
+            %td= user.name
+            %td= counted_movies
