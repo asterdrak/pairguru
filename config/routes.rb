@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   resources :movies, only: [:index, :show] do
     member do
       get :send_info
+      post :comment
+      delete "comment/:comment_id", to: "movies#destroy_comment", as: :comment_delete
     end
     collection do
       get :export

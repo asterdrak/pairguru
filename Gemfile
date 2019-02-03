@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "rails", "5.2"
 
+gem "acts_as_commentable_with_threading"
 gem "annotate"
 gem "bootstrap-sass"
 gem "devise"
