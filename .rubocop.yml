@@ -497,6 +497,8 @@ Metrics/BlockLength:
   CountComments: false
   Max: 25
   ExcludedMethods: ['describe', 'context', 'feature', 'resource', 'route_param', 'included']
+  Exclude:
+    - "config/routes.rb"
 Metrics/BlockNesting:
   Description: Avoid excessive block nesting
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#three-is-the-number-thou-shalt-count
