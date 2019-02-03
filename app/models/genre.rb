@@ -9,5 +9,5 @@
 #
 
 class Genre < ApplicationRecord
-  has_many :movies
+  has_many :movies, dependent: :restrict_with_exception
 end
