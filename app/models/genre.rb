@@ -10,4 +10,8 @@
 
 class Genre < ApplicationRecord
   has_many :movies, dependent: :restrict_with_exception
+
+  def movies_count
+    movies.size
+  end
 end
